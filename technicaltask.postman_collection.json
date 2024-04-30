@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "75ba554f-dfa3-4293-a353-e97396b99838",
+		"name": "technicaltask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18546328"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"test@gmail.com\",\r\n    \"firstName\" : \"test\",\r\n    \"lastName\" : \"test\",\r\n    \"birthDate\" : \"2003-11-16\",\r\n    \"address\" : \"test\",\r\n    \"phoneNumber\" : \"+123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1002/user/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1002",
+					"path": [
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"662d3cf9bd173a02383edfe7\",\r\n    \"email\" : \"test@gmail.com\",\r\n    \"firstName\" : \"test\",\r\n    \"lastName\" : \"test\",\r\n    \"birthDate\" : \"2003-11-16\",\r\n    \"address\" : \"test\",\r\n    \"phoneNumber\" : \"+123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1002/user/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1002",
+					"path": [
+						"user",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"6631005b896f867003e61f9c\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1002/user/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1002",
+					"path": [
+						"user",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fromDate\" : \"1990-04-16\",\r\n    \"toDate\" : \"2006-05-20\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1002/user/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1002",
+					"path": [
+						"user",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
